@@ -12,7 +12,7 @@ var started = false;
 var version = 'v0.2';
 
 (function($){
-  var methods {
+  var methods = {
 		init: function(){
       
       return this.each(function(){
@@ -46,7 +46,7 @@ var version = 'v0.2';
     					w:15
             },
             balls: {
-              {
+              0:{
                 e: '.shenanigan1',
                 x:296,
       					y:196,
@@ -59,7 +59,10 @@ var version = 'v0.2';
               e: '.score',
               s: 0
             }
-          })
+          });
+          
+          $this.append(pongUI);
+        }
       });
 		},
 
