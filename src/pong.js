@@ -11,6 +11,20 @@ var s_height = 400;
 var started = false;
 var version = 'v0.2';
 
+(function($){
+	$.fn.nebPong = function(options){
+    var settings = $.extend({
+      'height' : '400px',
+      'width' : '600px',
+      'maxBalls' : 3,
+      'speed' : 80
+    }, options);
+    
+	  return this.append('<div id="pong"><div id="player"></div><div id="computer"></div><div id="shenanigan"></div><div id="score"></div></div><div id="fullscreen"></div>');
+    
+	}
+})(jQuery);
+
 $.splash = {
 		
 		/* Initilization */
